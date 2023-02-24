@@ -7,13 +7,13 @@ const mailUtente = prompt("Inserisci la tua e-mail:");
 const mailConsentite = ["birra@yahoo.com", "pizza@gmail.com", "vino@hotmail.com", "alcool@libero.it"];
 
 /* Inizializza una variabile per tenere traccia se l'e-mail dell'utente è presente nell'array di e-mail consentite */
-const emailTrovata = false;
+let emailTrovata = false;
 
 /* Uso il ciclo "for" per cercare l'e-mail dell'utente */
 for (let i = 0; i < mailConsentite.length; i++) {
   if (mailConsentite[i] === mailUtente) {
     emailTrovata = true;
-    break;
+    
   }
 }
 
